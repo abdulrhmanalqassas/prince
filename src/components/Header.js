@@ -5,6 +5,13 @@ import logo from "../logo.png";
 import LocaleContext from "../LocaleContext";
 import i18n from "../i18n";
 import { useTranslation } from "react-i18next";
+const handleClickScroll = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export default function Header() {
   const [top, setTop] = useState(true);
@@ -45,7 +52,8 @@ export default function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/signin"
+                  onClick={() => handleClickScroll("hero")}
+                  href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   {t("home")}
@@ -53,7 +61,8 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/signin"
+                 onClick={() => handleClickScroll("about")}
+                  href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   {t("nav-li1")}
@@ -61,7 +70,8 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/signin"
+                  onClick={() => handleClickScroll("slider")}
+                  href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   {t("nav-li2")}
@@ -69,19 +79,22 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="/signin"
+                  onClick={() => handleClickScroll("footer")}
+                  href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   {t("contact-us")}
                 </Link>
               </li>
-      
+
               <li>
                 <Link href="#" onClick={() => changeLocale("en")}>
-                  EN
-                </Link>
-                //
+                  {" "}
+                  EN{" "}
+                </Link>{" "}
+                /{" "}
                 <Link href="#" onClick={() => changeLocale("ar")}>
+                  {" "}
                   عربي
                 </Link>
               </li>

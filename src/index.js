@@ -11,6 +11,7 @@ root.render(
   <Routes>
     <Route path="/*" element={<App />} />
   </Routes>
+  
 </HashRouter>
 );
 

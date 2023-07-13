@@ -1,7 +1,7 @@
 {
   "Next": "Next",
   "nav-li1":"About",
-  "nav-li2":"Our Product",
+  "nav-li2":"Our Products",
   "hero-header": "Prince",
   "hero-brand": "HOUSE",
   "hero-text": "Medical Company",
@@ -20,6 +20,8 @@
   "readh-Po-12328":"Readh Po #12328",
   "phone":"phone",
   "fax":"fax",
-  "headquarter":"Headquarter"
-
+  "headquarter":"Headquarter",
+  "Our-Product":"Our Products",
+  "contact-us":"Contact Us",
+  "home":"Home"
 }

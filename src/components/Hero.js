@@ -18,7 +18,7 @@ export default function Hero() {
   }
   const { t } = useTranslation();
   return (
-    <section  className="bg-cover relative  h-full w-full z-99"
+    <section id="hero" className="bg-cover relative  h-full w-full z-99"
      >
 <header
   class="relative flex items-center justify-center h-96 mb-12 overflow-hidden"

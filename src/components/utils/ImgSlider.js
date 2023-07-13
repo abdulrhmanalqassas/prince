@@ -108,7 +108,7 @@ export default function ImgSlider() {
     ],
   };
   return (
-    <div className="slider">
+    <div id="slider" className="slider">
       <div>
         <div className="text-center mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">

@@ -14,7 +14,7 @@ export default function Footer() {
   }
   const { t } = useTranslation();
   return (
-    <footer>
+    <footer id="footer">
       <div className="bg-blue-200 w-full  px-6 sm:px-6">
 
         {/* Top area: Blocks */}
