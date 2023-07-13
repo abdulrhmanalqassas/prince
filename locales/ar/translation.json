@@ -1,0 +1,16 @@
+{
+    "order": "New Order",
+    "request": "request",
+    "generate": "Generate Order",
+    "price": "price",
+    "net": "Net Sales",
+    "dashboard": "Dashboard",
+    "My Customers": "My Customers",
+    "success": "success attempts",
+    "not": "not good attempts",
+    "some kind of attempts": "some kind of attempts",
+    "105":"Main Card",
+    "h1" : "grow",
+    "h2":"gifts",
+    "h3":"success rate"
+  }
