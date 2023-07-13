@@ -48,14 +48,14 @@ const Images = [
 export default function ImgSlider() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('cat.pdf').then(response => {
+    fetch('optical.pptx').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'cat.pdf';
+            alink.download = 'optical.pptx';
             alink.click();
         })
     })
